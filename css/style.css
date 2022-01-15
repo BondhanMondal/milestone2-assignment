@@ -246,6 +246,18 @@ body{
  .footer-logo i{
      margin-right: 16px;
  }
+ /*-------------------------------------------------------
+                   nav bar toggle
+ --------------------------------------------------------*/
+  #nav-toggler{
+     display: none;
+
+ }
+ .nav-toggler-icon{
+     display: none;
+     color: black;
+     font-size: 30px;
+ }
 
  /*-------------------------------------------------------
                    Media Queries
@@ -255,8 +267,51 @@ body{
                    for mobile devices
  --------------------------------------------------------*/
  @media only screen and (max-width:688px){
-     
+     .container{
+         width: 100%;
+     }
+     .top{
+         grid-template-columns: 1fr;
+         height: fit-content;
+     }
+     .popular-collections,
+     .contact{
+         grid-template-columns: 1fr;
+     }
+     .logo{
+         /* grid-template-columns: 1fr 1fr 1fr;
+         gap: 20px; */
+         display: none;
+     }
+     .nav-toggler-icon{
+        display: block;
+    }
+    .navigation{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 20px 0;
+        /* transform: translateY(-330px);
+        transition: .4s ease-in-out; */
+        transform: translateY(-400px);
+        transition: .4s ease-in-out;
+    }
+    .navigation li a{
+        color: #121212;
+    }
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0);
+        
+
+    }
  }
+ /*-------------------------------------------------------
+                   for tablet devices
+ --------------------------------------------------------*/
 
  
  
