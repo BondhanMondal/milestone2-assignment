@@ -104,6 +104,14 @@ body{
       justify-content: center;
       align-items: flex-end;
   }
+  /*------------------------------------------------------------
+                         Logo part CSS
+  ------------------------------------------------------------*/
+  .logo{
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+      margin: 100px 0;
+  }
  
  
  
