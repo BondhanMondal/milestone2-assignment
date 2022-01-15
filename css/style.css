@@ -278,6 +278,10 @@ body{
      .contact{
          grid-template-columns: 1fr;
      }
+     .top-left{
+         order: 2;
+         padding: 50px 0;
+     }
      .logo{
          display: none;
          
