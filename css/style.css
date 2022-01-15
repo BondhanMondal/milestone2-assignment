@@ -295,7 +295,7 @@ body{
         align-items: center;
         background-color: white;
         padding: 20px 0;
-        transform: translateY(-300px);
+        transform: translateY(-250px);
         transition: .4s ease-in-out;
     }
     .navigation li a{
